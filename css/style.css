@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+.container {
+    margin: 0;
+    padding: 0;
+    background-image: url(bkgd/stars.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+}
+.aurora {
+    height: 20%;
+}
+.msg{
+    position: sticky;
+    top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgba(250,150,0,0.2);
+}
+.empty {
+    height: 25%;
+}
+.road {
+
+}
+.aurora img{
+    width: 100%;
+}
+.road img{
+    width: 100%;
+}
+h2, h3 {
+    font-family: arial;
+    color: aliceblue;
+    text-shadow: 2px 2px black;
+}
+h2 {
+    text-align: left;
+}
+h3 {
+    text-align: right;
+    font-style: italic;
+}
