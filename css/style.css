@@ -14,7 +14,7 @@
 }
 .msg{
     position: sticky;
-    top: 20%;
+    top: 20vh;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 10px;
@@ -22,16 +22,18 @@
     background-color: rgba(250,150,0,0.2);
 }
 .empty {
-    height: 25%;
+    height: 20vh;
 }
 .road {
-
+    display: flex;
+    align-items: center
 }
 .aurora img{
     width: 100%;
 }
 .road img{
     width: 100%;
+
 }
 h2, h3 {
     font-family: arial;
