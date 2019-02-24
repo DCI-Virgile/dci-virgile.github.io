@@ -1,48 +1,66 @@
 * {
     margin: 0;
-    padding: 0; 
-}
-.container {
-    margin: 0;
     padding: 0;
-    background-image: url(bkgd/stars.jpg);
-    background-size: contain;
-    background-attachment: fixed;
 }
-.aurora {
-    height: 20vh;
-}
-.msg{
-    position: sticky;
-    top: 20vh;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    background-color: rgba(250,150,0,0.2);
-}
-.empty {
-    height: 20vh;
-}
-.road {
-    display: flex;
-    align-items: center
-}
-.aurora img{
-    width: 100%;
-}
-.road img{
-    width: 100%;
-}
-h2, h3 {
+body {
     font-family: arial;
-    color: aliceblue;
-    text-shadow: 2px 2px black;
 }
-h2 {
-    text-align: left;
+header {
+    height: 14.5vh;
+    width: 100%;
+    background-image: url(puzzle.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 0.25vh solid black;
+    border-top: 0.25vh solid black;
 }
-h3 {
-    text-align: right;
-    font-style: italic;
+.heading {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+}
+.heading h1 {
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-shadow:
+        -1.5px -1.5px #000,
+		1.5px -1.5px #000,
+		-1.5px 2px #000,
+		1.5px 2px #000;
+}
+nav {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+}
+.button {
+    background-color: darkslategray;
+    border-top: 0.25vh solid black;
+    border-bottom: 0.25vh solid black;
+    color: white;
+    padding: 1vh 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+    cursor: pointer;
+    width: 33.33%;
+}
+.button:hover {
+    background-color: grey;
+}
+.content {
+}
+.content iframe {
+    display: flex;
+    bottom: 0;
+    border: none;
+    align-items:center;
+    height: 85vh;
 }
