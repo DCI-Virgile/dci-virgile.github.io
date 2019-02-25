@@ -1,14 +1,17 @@
+/* ----------------------
+CSS STYLING OF THE INDEX
+------------------------*/
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    font-family: arial;
+    font-family: "lato", sans-serif;
 }
 header {
     height: 14.5vh;
     width: 100%;
-    background-image: url(puzzle.jpg);
+    background-image: url(bg/puzzle.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,10 +29,13 @@ header {
     text-align: center;
     width: 100%;
     color: white;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: clip;
     text-shadow:
-        -2px -2px rgba(0,0,100,0.5),
-		2px -2px rgba(0,100,0,0.5),
-		-2px 2px rgba(100,0,0,0.5),
+        -2px -2px rgba(0,0,100,0.7),
+		2px -2px rgba(0,100,0,0.7),
+		-2px 2px rgba(100,0,0,0.7),
 		2px 2px rgba(0,0,0,0.4);
 }
 nav {
@@ -37,20 +43,20 @@ nav {
     align-items: center;
     height: 5vh;
     width: 100%;
-}
-.button {
     background-color: darkslategray;
     border-top: 0.25vh solid black;
     border-bottom: 0.25vh solid black;
+}
+.button {
     color: white;
     padding: 1vh 0px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.5em;
     margin: 0px 0px;
     cursor: pointer;
-    width: 33.33%;
+    width: 150px;
 }
 .button:hover {
     background-color: grey;
@@ -63,4 +69,173 @@ nav {
     border: none;
     align-items:center;
     height: 85vh;
+    width: 100%;
+}
+/*
+@media only screen and (max-width: 600px) {
+  nav {
+    background-color: lightblue;
+  }
+}
+@media only screen and (max-height: 500px) {
+    nav {
+        background-color: lightblue;
+        display: block;
+    }
+    header {
+        float: left;
+        width: 24.5vw;
+        height: 100vh;
+        border-bottom: none;
+        border-top: none;
+        border-right: 0.25vw solid black;
+        border-left: 0.25vw solid black;
+    }
+    .content iframe{
+        height: 100vh;
+        width: 75vw;
+    }
+}
+/*--------------------------------
+CSS STYLING OF THE PARALLAX STUFF
+--------------------------------*/
+
+.parallax {
+  height: 100%;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bg {
+    position: relative;
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+}
+
+.top, .bottom {
+    min-height: 100vh;
+}
+.road {
+  background-image: url("bg/road.jpg");
+}
+
+.ireland {
+  background-image: url("bg/ireland.jpg");
+}
+
+.pub {
+  background-image: url("bg/bar-209148_1920.jpg");
+}
+
+.duomo {
+  background-image: url("bg/duomo.jpg");
+}
+
+.roma {
+  background-image: url("bg/roma.jpg");
+}
+
+.marrakesh {
+  background-image: url("bg/marrakesh.jpg");
+}
+
+.atlas {
+  background-image: url("bg/atlas.jpg");
+}
+
+.valpo {
+  background-image: url("bg/valpo.jpg");
+}
+
+.gaucho {
+  background-image: url("bg/gaucho.jpg");
+}
+
+.wall {
+  background-image: url("bg/berlin-wall.jpg");
+}
+
+.alex {
+  background-image: url("bg/alex.jpg");
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+.intro {
+    color: #777;
+    background-color:white;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+}
+.intro h3 {
+    text-align:center;
+}
+.textsep {
+    position:relative;
+}
+.info {
+    color:#000;
+    background-color:#fff;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+}
+.sep {
+    height: 20vh;
+    background-color: white;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bg {
+    background-attachment: scroll;
+  }
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/*-------------------------
+CSS STYLING OF THE PROFILE
+--------------------------*/
+
+.profile {
+    opacity: 0.1;
+    width: 100%;
+    background-image: url(bg/profil.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    @media only screen and (max-device-width: 1024px) {
+    .profile {
+        background-attachment: scroll;
+        height: 100vh;
+        width: auto;
+        }
 }
