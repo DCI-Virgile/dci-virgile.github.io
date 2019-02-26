@@ -11,9 +11,9 @@ body {
 header {
     height: 9.25vh;
     width: 100%;
-    background-image: url(bg/puzzle.jpg);
+    background-image: url(bg/banner.png);
     background-attachment: fixed;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 0.25vh solid black;
@@ -43,7 +43,7 @@ nav {
     align-items: center;
     height: 5vh;
     width: 100%;
-    background-color: darkslategray;
+    background-color: grey;
     border-bottom: 0.25vh solid black;
 }
 .button {
@@ -58,7 +58,7 @@ nav {
     width: 150px;
 }
 .button:hover {
-    background-color: grey;
+    background-color: black;
 }
 .content {
 }
@@ -112,7 +112,7 @@ CSS STYLING OF THE PARALLAX STUFF
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
+    min-height: 80vh;
 }
 
 .top, .bottom {
@@ -122,85 +122,136 @@ CSS STYLING OF THE PARALLAX STUFF
 /* --------------------------------------
 get a bg image for every different class*/
 
+/* profile.html */
+
+.profile {
+    background-image: url(bg/profil.jpg);
+}
+
 /* travels.html */
 
 .road {
-  background-image: url("bg/road.jpg");
+    background-image: url("bg/road.jpg");
 }
 .ireland {
-  background-image: url("bg/ireland.jpg");
+    background-image: url("bg/ireland.jpg");
 }
 .pub {
-  background-image: url("bg/bar-209148_1920.jpg");
+    background-image: url("bg/pub.jpg");
 }
 .duomo {
-  background-image: url("bg/duomo.jpg");
+    background-image: url("bg/duomo.jpg");
 }
 .roma {
-  background-image: url("bg/roma.jpg");
+    background-image: url("bg/roma.jpg");
 }
 .marrakesh {
-  background-image: url("bg/marrakesh.jpg");
+    background-image: url("bg/marrakesh.jpg");
 }
 .atlas {
-  background-image: url("bg/atlas.jpg");
+    background-image: url("bg/atlas.jpg");
 }
 .valpo {
-  background-image: url("bg/valpo.jpg");
+    background-image: url("bg/valpo.jpg");
 }
 .gaucho {
-  background-image: url("bg/gaucho.jpg");
+    background-image: url("bg/gaucho.jpg");
 }
 .wall {
-  background-image: url("bg/berlin-wall.jpg");
+    background-image: url("bg/berlin-wall.jpg");
 }
 .alex {
-  background-image: url("bg/alex.jpg");
+    background-image: url("bg/alex.jpg");
 }
 
 /* skills.html*/
 
 .skill {
-  background-image: url("bg/skill.jpg");
+    background-image: url("bg/skill.jpg");
 }
 .maze {
-  background-image: url("bg/maze.jpg");
+    background-image: url("bg/maze.jpg");
 }
 .youdied {
-  background-image: url("bg/youdied.jpg");
+    background-image: url("bg/youdied.jpg");
 }
 .school {
-  background-image: url("bg/school.jpg");
+    background-image: url("bg/school.jpg");
 }
 .teacher {
-  background-image: url("bg/teacher.jpg");
+    background-image: url("bg/teacher.jpg");
+}
+.watercolor {
+    background-image: url("bg/watercolor.jpg");
+}
+.drawing {
+    background-image: url("bg/drawing.jpg");
 }
 .alleycat {
-  background-image: url("bg/alleycat.jpg");
+    background-image: url("bg/alleycat.jpg");
+}
+.f42 {
+    background-image: url("bg/f42.jpg");
+}
+
+/* interests.html */
+
+.interest {
+    background-image: url("bg/interest.jpg");
+}
+.book {
+    background-image: url("bg/book.jpg");
+}
+.cinema {
+    background-image: url("bg/cinema.jpg");
+}
+.sotc {
+    background-image: url("bg/sotc.jpg");
+}
+.flashback {
+    background-image: url("bg/flashback.jpg");
+}
+.bitd {
+    background-image: url("bg/bitd.jpg");
+}
+.shadowrun {
+    background-image: url("bg/shadowrun.png");
+}
+.bike {
+    background-image: url("bg/bike.jpg");
+}
+.climb {
+    background-image: url("bg/climb.jpg");
+}
+
+/* contact.html */
+
+.phone {
+    background-image: url(bg/phone.jpg);
 }
 
 .caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
 }
 
 .caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
 }
 
 h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
 }
 .intro {
     color: #777;
@@ -223,7 +274,7 @@ h3 {
     text-align: justify;
 }
 .sep {
-    height: 20vh;
+    height: 10vh;
     background-color: white;
 }
 /* Turn off parallax scrolling for tablets and phones */
@@ -236,23 +287,3 @@ h3 {
     width: 0px;
 }
 
-/*-------------------------
-CSS STYLING OF THE PROFILE
---------------------------*/
-
-.profile {
-    opacity: 0.1;
-    width: 100%;
-    background-image: url(bg/profil.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-    @media only screen and (max-device-width: 1024px) {
-    .profile {
-        background-attachment: scroll;
-        height: 100vh;
-        width: auto;
-        }
-}
