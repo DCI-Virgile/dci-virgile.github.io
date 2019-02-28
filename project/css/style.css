@@ -54,10 +54,10 @@ nav {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.5em;
     margin: 0px 0px;
     cursor: pointer;
     width: 15vw;
+    font-size: 1.5em;
 }
 .button:hover {
     background-color: #444;
@@ -93,12 +93,19 @@ nav {
     .button {
         padding: 3vh 2vh;
         width: 25vw;
+        font-size: 1em;
+    }
+    .button:hover {
+        text-decoration: underline;
+        color: grey;
+        background-color: transparent;
     }
     .wide {
         display: none;
     }
     .narrow {
         display: block;
+        font-size: 2em;
     }
 }
 @media only screen and (max-device-width: 1024px){
@@ -117,13 +124,20 @@ nav {
     .button {
         padding: 3vh 2vh;
         width: 25vw;
+        font-size: 1em;
+    }
+    .button:hover {
+        text-decoration: underline;
+        color: grey;
+        background-color: transparent;
     }
     .wide {
         display: none;
     }
     .narrow {
         display: block;
-    } 
+        font-size: 2em;
+    }
 }
 /*
 @media only screen and (max-height: 500px) {
