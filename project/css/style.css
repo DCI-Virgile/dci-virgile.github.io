@@ -437,8 +437,8 @@ RESPONSIVE LAYOUT FOR PHONE SCREENS
         background-color: #111;
         color: #fff;
         padding: 9px;                      /* black border and white font for the main captions*/
-        font-size: 13px;
-        letter-spacing: 12px;
+        font-size: 15px;
+        letter-spacing: 8px;
     }
 
     h2 {
