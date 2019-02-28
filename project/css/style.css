@@ -118,11 +118,15 @@ CSS STYLING OF THE I FRAMES
     background-color: transparent;      /* no border for the scroll down caption*/
 }
 
-h3 {
+h2 {
     letter-spacing: 5px;
     text-transform: uppercase;          /* all cps titles!*/
     font-size: 20px;
     color: #111;
+}
+
+p {
+    color: #777;
 }
 
 .info {
@@ -161,7 +165,7 @@ h3 {
     padding:50px 20px;
 }
 
-.contact h3, .contact p{
+.contact h2, .contact p{
     text-align:center;
 }
 
@@ -169,7 +173,7 @@ h3 {
     color: #444;
 }
 
-.intro h3 {
+.intro h2 {
     text-align:center;
 }
 
@@ -437,7 +441,7 @@ RESPONSIVE LAYOUT FOR PHONE SCREENS
         letter-spacing: 15px;
     }
 
-    h3 {
+    h2 {
         letter-spacing: 3px;
         text-transform: uppercase;          /* all cps titles!*/
         font-size: 15px;
