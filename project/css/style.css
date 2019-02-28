@@ -111,7 +111,7 @@ CSS STYLING OF THE I FRAMES
     color: #fff;
     padding: 18px;                      /* black border and white font for the main captions*/
     font-size: 25px;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
 }
 
 .caption span.border.scroll {
