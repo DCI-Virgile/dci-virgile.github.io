@@ -9,6 +9,8 @@ body {
     font-family: "lato", sans-serif;
 }
 header {
+    display: flex;
+    align-items: center;
     height: 6.25vh;
     width: 100%;
     background-image: url(bg/banner.jpg);
@@ -20,13 +22,11 @@ header {
     border-top: 0.25vh solid black;
 }
 .heading {
-    display: flex;
-    align-items: center;
     width: 100%;
     height: 5.5vh;
 }
 .heading h1 {
-    font-size: 5.5vh;
+    font-size: 5vh;
     text-align: center;
     width: 100%;
     color: white;
@@ -73,7 +73,7 @@ nav {
     bottom: 0;
     border: none;
     align-items:center;
-    height: 93.75vh;
+    height: 93.25vh;
     width: 85vw;
 }
 
@@ -344,9 +344,7 @@ RESPONSIVE LAYOUT RESIZING THE WINDOW
 -------------------------------------*/
 
 @media only screen and (max-width: 700px) {
-    .heading h1 {
-        font-size: 1.5em;
-    }
+
     nav {
         display: flex;
         align-items: center;
@@ -356,7 +354,7 @@ RESPONSIVE LAYOUT RESIZING THE WINDOW
         border-bottom: 0.25vh solid black;
     }
     .content iframe{
-        height: 85vh;
+        height: 83vh;
         width: 100vw;
     }
     .button {
@@ -364,7 +362,7 @@ RESPONSIVE LAYOUT RESIZING THE WINDOW
         width: 25vw;
     }
     .button:hover {
-        text-decoration: underline;
+        text-decoration: none;
         color: grey;
         background-color: transparent;
     }
@@ -385,9 +383,6 @@ RESPONSIVE LAYOUT FOR PHONE SCREENS
     .bg {
         background-attachment: scroll;
     }
-    .heading h1 {
-        font-size: 1.5em;
-    }
     nav {
         display: flex;
         align-items: center;
@@ -397,7 +392,7 @@ RESPONSIVE LAYOUT FOR PHONE SCREENS
         border-bottom: 0.25vh solid black;
     }
     .content iframe{
-        height: 85vh;
+        height: 83vh;
         width: 100vw;
     }
     .button {
@@ -406,7 +401,7 @@ RESPONSIVE LAYOUT FOR PHONE SCREENS
         font-size: 1em;
     }
     .button:hover {
-        text-decoration: underline;
+        text-decoration: none;
         color: grey;
         background-color: transparent;
     }
