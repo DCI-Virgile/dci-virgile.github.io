@@ -2,12 +2,14 @@
 CSS STYLING OF THE INDEX
 ------------------------*/
 * {
-    margin: 0;
+    margin: 0;                                  /* modern borderless layout*/
     padding: 0;
 }
+
 body {
-    font-family: "lato", sans-serif;
+    font-family: "lato", sans-serif;            /* choosing the default font*/
 }
+
 header {
     display: flex;
     align-items: center;
@@ -15,63 +17,64 @@ header {
     width: 100%;
     background-image: url(bg/banner.jpg);
     background-attachment: scroll;
-    background-position: center;
+    background-position: center;                /* positioning the header*/
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 0.25vh solid black;
     border-top: 0.25vh solid black;
 }
+
 .heading {
-    width: 100%;
+    width: 100%;                                /* tweaking the position of H1*/
     height: 5.5vh;
 }
+
 .heading h1 {
     font-size: 5vh;
     text-align: center;
     width: 100%;
-    color: white;
+    color: white;                               /* formating h1*/
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: clip;
     text-shadow:
         -2px -2px black,
 		2px -2px black,
-		-2px 2px black,
+		-2px 2px black,                         /* a little hack to create an outline*/
 		2px 2px black;
-        /*-2px -2px rgba(0,0,100,0.7),
-		2px -2px rgba(0,100,0,0.7),
-		-2px 2px rgba(100,0,0,0.7),
-		2px 2px rgba(0,0,0,0.4);*/
 }
+
 nav {   
     float: left;
-    display: block;
+    display: block;                             /* basic deskop nivigation on the side*/
     width: 15vw;
 }
+
 .button {
     color: black;
     padding: 1vh 0px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: inline-block;                      /* tweaking the navigation buttons look*/
     margin: 0px 0px;
     cursor: pointer;
     width: 15vw;
     font-size: 1.5em;
 }
+
 .button:hover {
-    background-color: #444;
+    background-color: #444;                     /* grey bg and white font on hover*/
     color: #fff;
 }
+
 .narrow {
-    display: none;
+    display: none;                              /* hide the icons on desktop mode*/
 }
-.content {
-}
+
 .content iframe {
     display: flex;
     bottom: 0;
-    border: none;
+    border: none;                               /* tweaking the size of the i-frame box*/
     align-items:center;
     height: 93.25vh;
     width: 85vw;
@@ -81,58 +84,59 @@ nav {
 CSS STYLING OF THE I FRAMES
 --------------------------*/
 
-.parallax {
-  height: 100%;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-}
-
 .bg {
     position: relative;
     opacity: 0.7;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center;        /* for the effect, the bacgrounds are fixed*/
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 80vh;
 }
 
 .top, .bottom {
-    min-height: 100vh;
+    min-height: 100vh;                  /* 1st and last pics fill the whole screen*/
 }
 
 .caption {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 50%;                           /* captions are centered*/
     width: 100%;
     text-align: center;
-    color: #000;
 }
 
 .caption span.border {
     background-color: #111;
     color: #fff;
-    padding: 18px;
+    padding: 18px;                      /* black border and white font for the main captions*/
     font-size: 25px;
     letter-spacing: 10px;
 }
 
 .caption span.border.scroll {
-    background-color: transparent;
+    background-color: transparent;      /* no border for the scroll down caption*/
 }
 
 h3 {
     letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 20px "Lato", sans-serif;
+    text-transform: uppercase;          /* all cps titles!*/
+    font-size: 20px;
     color: #111;
+}
+
+.info {
+    color:#000;
+    background-color:#fff;
+    text-align:center;                  /* this is the basic text section*/
+    padding:50px 80px;
+    text-align: justify;
 }
 
 .intro {
     color: #777;
     background-color:white;
-    text-align:center;
+    text-align:center;                  /* this is the 1st text section*/
     padding:50px 80px;
     text-align: justify;
 }
@@ -140,14 +144,14 @@ h3 {
 .about {
     font-size: 30px;
     font-family: serif;
-    color: #777;
+    color: #777;                        /* specific to the "about" section serif for the wanted look*/
     background-color:white;
     text-align:center;
-    padding:50px 25vw; 
+    padding:50px 5vw; 
 }
 
 .about a {
-    font-size: 15px;
+    font-size: 15px;                    /* making the legal link small*/
 }
 
 .contact {
@@ -157,7 +161,7 @@ h3 {
     padding:50px 20px;
 }
 
-.contact h3 {
+.contact h3, .contact p{
     text-align:center;
 }
 
@@ -170,15 +174,7 @@ h3 {
 }
 
 .textsep {
-    position:relative;
-}
-
-.info {
-    color:#000;
-    background-color:#fff;
-    text-align:center;
-    padding:50px 80px;
-    text-align: justify;
+    position:scroll;
 }
 
 .sep {
@@ -187,7 +183,7 @@ h3 {
 }
 
 ::-webkit-scrollbar {
-    width: 0px;         /*delete the scrollbar*/
+    width: 0px;                     /*delete the scrollbar*/
 }
 
 /* --------------------------------------
@@ -299,7 +295,9 @@ get a bg image for every different class*/
 
 .phone {
     background-image: url(bg/phone.jpg);
+    
 }
+/* legalstuff.html */
 
 .legal {
     background-image: url(bg/legal.jpg);
@@ -353,26 +351,33 @@ RESPONSIVE LAYOUT RESIZING THE WINDOW
         background-color: white;
         border-bottom: 0.25vh solid black;
     }
+    
     .content iframe{
         height: 83vh;
         width: 100vw;
     }
+    
     .button {
-        padding: 3vh 2vh;
-        width: 25vw;
+        padding: 0vh 0vh;
+        width: 20vw;
+        overflow: hidden; 
     }
+    
     .button:hover {
         text-decoration: none;
         color: grey;
         background-color: transparent;
     }
+    
     .wide {
         display: none;
     }
+    
     .narrow {
         display: block;
         font-size: 1.5em;
     }
+    
 }
 
 /*-----------------------------------
@@ -380,9 +385,11 @@ RESPONSIVE LAYOUT FOR PHONE SCREENS
 -------------------------------------*/
 
 @media only screen and (max-device-width: 1024px){
+    
     .bg {
         background-attachment: scroll;
     }
+    
     nav {
         display: flex;
         align-items: center;
@@ -391,25 +398,84 @@ RESPONSIVE LAYOUT FOR PHONE SCREENS
         background-color: white;
         border-bottom: 0.25vh solid black;
     }
+    
     .content iframe{
         height: 83vh;
         width: 100vw;
     }
+    
     .button {
-        padding: 3vh 2vh;
-        width: 25vw;
-        font-size: 1em;
+        padding: 0vh 0vh;
+        width: 20vw;
+        overflow: hidden; 
     }
+    
     .button:hover {
         text-decoration: none;
         color: grey;
         background-color: transparent;
     }
+    
     .wide {
         display: none;
     }
+    
     .narrow {
         display: block;
         font-size: 2em;
+    }
+    
+    
+    
+    
+    .caption span.border {
+        background-color: #111;
+        color: #fff;
+        padding: 9px;                      /* black border and white font for the main captions*/
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+
+    h3 {
+        letter-spacing: 3px;
+        text-transform: uppercase;          /* all cps titles!*/
+        font-size: 15px;
+        color: #111;
+    }
+
+    .info {
+        color:#000;
+        background-color:#fff;
+        text-align:center;                  /* this is the basic text section*/
+        padding:50px 5px;
+        text-align: justify;
+    }
+
+    .intro {
+        color: #777;
+        background-color:white;
+        text-align:center;                  /* this is the 1st text section*/
+        padding:50px 5px;
+        text-align: justify;
+    }
+
+    .about {
+        font-size: 15px;
+        font-family: serif;
+        color: #777;                        /* specific to the "about" section serif for the wanted look*/
+        background-color:white;
+        text-align:center;
+        padding:50px 5px; 
+    }
+
+    .about a {
+        font-size: 8px;                    /* making the legal link small*/
+    }
+
+    .contact {
+        color: #777;
+        background-color: #f5f5f5f5;
+        text-align:left;
+        padding:50px 5px;
     }
 }
