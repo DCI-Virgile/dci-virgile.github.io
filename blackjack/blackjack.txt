@@ -1,0 +1,66 @@
+Cowboys
+You and your crew are bounty hunters registered within the Blackjack Network. A system wide billboard for rich clients to hire the service of people of your kind.
+You know the kind.
+From the Megacorps of the inner system to the Anarchist of the outer rim, from the luxury of Venus’ floating casinos to the depth of Europa’s underwater labs, people know you by one name.
+Sometimes muttered  with a hint of admiration, usually with nothing but contempt, the name for your kind is “Cowboys”.
+
+Suits
+A lot of cowboys dress sharply, but this is not what this is about.
+When the Blackjack Network put a bounty on offer, it assigns to it a ranking in 3 different criterias, codenamed the SUITS.
+Spade require finesse.
+Club require force.
+Heart require persuasion.
+
+There is a 4th ranking, the Diamond ranking, the one that interests you the most. A bounty pays 1000 Outer System Credit for every Diamond rank.
+
+
+You and every other Cowboys registered at the Blackjack Network have a personal ranking in every Suit, it represents your ability to get shit done when you attempt an action of the same suit
+allow 6 points between your 3 action suits, no less than 1, no more than 4.
+
+ allow 6 points
+
+Cold - Hot
+
+7-10-10 / 9-9-9 / 8-9-10
+
+Spade
+How good you are at infiltrating a complex without being noticed, hacking a computer system and staying calm under fire.
+Club
+How good you are at messing up people with your fists, shoot them in close quarter and accomplish physical prowesses.
+Heart
+How good you are at swaying people to your cause, con them into doing what you want and charm them to do your bidding.
+
+
+
+
+Spade - careful planning
+Club - improvised weapon
+Heart - shiny trinket
+
+Skilled - Drawing higher than your COLD score gives you 1 HIT
+Opportunist - Same suit as the action gives 1 HIT
+Resourceful - Drawing a Diamond allows you to change a gear tag and cross it off you can spend it immediately if you choose to. Or invoque a gear tag for free
+
+BlackJack!
+you can choose to draw another card for a chance to gain an additional HIT
+
+Your goal is to draw as many card as to draw higher than your HOT score, but less than 21
+
+Committed - Drawing higher than your HOT score gives 2 HITs
+Lucky - Hitting Blackjack gives 4 HITS and clear the consequences
+Hitting 21 is an automatic success with maximal effect, and you suffer no consequences.
+Busted - Hitting 22 or more is an automatic failure, and you suffer severe consequences
+Every card you draw is a gamble! if you fail to score an additional HIT in the BJ phase, you lose 1 HIT for every additional card every card you draw adds 1 RISK
+Gambit - If you draw a card when your total is >= 12 you get MOXIE when your total is 14, you mark xp.
+
+Consequences is difference between HITS and total number of card drawn
+0 - nothing
+1 - mild
+2 - serious 
+3+ - severe
+
+BJ is not recognised in the inner system. Bounty hunting is a criminal activity and Cowboys have to act covertly.
+
+BJ works with the authorities of the outer system and doesn’t accept illegal bounties there.
+
+Mars and Jupiter’s moons are a grey area
