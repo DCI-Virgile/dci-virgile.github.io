@@ -1,16 +1,11 @@
-var go = document.querySelector('#go');
-var webhook = document.querySelector('#webhook');
-var message = document.querySelector('#message');
-var sent = document.querySelector('#sent');
+var go = document.getElementById('go');
 
-go.addEventListener('submit', function (event) {
-    event.preventDefault();
-    if (webhook.value.length < 1) return;
-    localStorage.setItem('webhook', 'webhook');
-
-}, false);
-
-var saved = localStorage.getItem('message');
-if (saved) {
-	sent.innerHTML = saved;
-}
+go.addEventListener('submit', function () {
+    var webhook = document.querySelector('#webhook');
+    var message = document.querySelector('#message');
+    message = message.value;
+    webhook = webhook.value;
+    localStorage.setItem('webhook', JSON.stringify(webhook));
+    localStorage.setItem('message', JSON.stringify(message));
+});
+document.getElementById("sent").innerHTML = "you sent: " + localStorage.getItem('message') + " to: " + localStorage.getItem('webhook');
