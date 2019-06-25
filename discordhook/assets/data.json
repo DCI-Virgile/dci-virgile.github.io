@@ -1,0 +1,4 @@
+{
+    "username": "BlackJack Network",
+    "content": "localStorage.getItem('message')"
+  }
