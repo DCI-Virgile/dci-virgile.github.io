@@ -18,9 +18,18 @@
         </pre>                           
     </div>
     <div class="content">
+            <!-- The idea here is the text only appears when a symbol  is highlighted. When you click on a symbol you're asked for confirmation, then the page change to ask you for a weakness. Then ask for confirmation again, then tells you you can have 2 weaknesses with the effect of having a stronger main suit. not selecting a strong suit and clicking "next" asks you to confirm that you want to be a Jack of all trades.-->
         <div>
-            <h2>Pick an Action Suit:</h2>
-            <span id="spade">&spades;</span><span id="heart">&hearts;</span><span id="club">&clubs;</span>
+            <h2>Pick your strong Suit:</h2>
+            <div class="grid">
+                <i id="spade">&spades;</i><i id="heart">&hearts;</i><i id="club">&clubs;</i>
+            </div>
+            <p>You have also the option not to select a strong suit. It would make you a Jack of all Trades, with the advantage of being more adaptable and progressing a little bit quicker at the beginning.</p><br><br>
+            <div class="textbox">
+                <p id="descsp">The Spade suit is used for actions that require to execute something carefully planned, to stay cool under fire. It's the action suit for infiltrators, hackers and "professionals".</p>
+                <p id="desche">The Heart suit is used for actions that require social finesse, seduction or persuasion. It's the action suit of con artists and smooth operators.</p>
+                <p id="desccl">The Club suit is used for actions that require force. It's the action suits of gunslingers, brutes and athletes.</p>
+            </div>
         </div>
         <form action="suit.html"><input type="submit" class="button" value="NEXT"></form>    
         
