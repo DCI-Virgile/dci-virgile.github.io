@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #myCard {
+            font-size: 50vh;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="shuffle()">shuffle the deck</button>
+    <p id="deck"></p>
+    <button onclick="draw()">Draw a card</button>
+    <p id="myCard"></p>
+
+    <script>
+        let myCard = document.getElementById('myCard');
+
+        let array = ['', '&#x1F0A7', '&#x1F0B7', '&#x1F0C7', '&#x1F0D7', '&#x1F0A8', '&#x1F0B8', '&#x1F0C8', '&#x1F0D8', '&#x1F0A9', '&#x1F0B9', '&#x1F0C9', '&#x1F0D9', '&#x1F0AA', '&#x1F0BA', '&#x1F0CA', '&#x1F0DA', '&#x1F0AB', '&#x1F0BB', '&#x1F0CB', '&#x1F0DB', '&#x1F0AD', '&#x1F0BD', '&#x1F0CD', '&#x1F0DD', '&#x1F0AE', '&#x1F0BE', '&#x1F0CE', '&#x1F0DE', '&#x1F0A1', '&#x1F0B1', '&#x1F0C1', '&#x1F0D1'];
+        document.getElementById("deck").innerHTML = array;
+        function shuffle() {
+            let shuffled = [];
+
+            for (i = 0; i < 10000; i++) {
+                let start = Math.floor((Math.random() * 5) + 1);
+                let shuffling = Math.floor((Math.random() * 15) + 1);
+                shuffled = array.splice(start, shuffling);
+                array = array.concat(shuffled);
+            }
+
+            clone = array.slice(0);
+            document.getElementById("deck").innerHTML = array;
+        };
+
+        let clone = array.slice(0);
+        function draw() {
+
+            myCard = clone.pop();
+            document.getElementById("myCard").innerHTML = myCard;
+            document.getElementById("deck").innerHTML = clone;
+        };
+    </script>
+</body>
+
+
+</html>
