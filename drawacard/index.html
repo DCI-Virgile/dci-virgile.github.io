@@ -5,84 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .spade {
-            color: darkslateblue;
-        }
-        .club {
-            color: darkslategray;
-        }
-        .heart{
-            color: magenta;
-        }
-        .diamond{
-            color: red;
-        }
-
-        #myCard {
-            font-size: 50vh;
-        }
-    </style>
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <button onclick="shuffle()">Shuffle the deck</button>
+<body onload="shuffle()">
     <p id="deck"></p>
-    <button onclick="draw()">Draw a card</button>
-    <p id="myCard"></p>
+    <div id="cards">
+        <button id="cardBack" onclick="draw()">&#x1F0A0</button>
+        <button onclick="shuffle()" id="myCard">&#x1F0DF</button>
+    </div>
+    <p id="name"></p>
     <p id="total"></p>
-    <p id="total2"></p>
+    
+    <p id="drawn"></p>
 
-    <script>
-        let myCard = document.getElementById('myCard');
-
-        let array = ['<span class= "spade">&#x1F0A1</span>', '<span class= "spade">&#x1F0A2</span>', '<span class= "spade">&#x1F0A3</span>', '<span class= "spade">&#x1F0A4</span>', '<span class= "spade">&#x1F0A5</span>', '<span class= "spade">&#x1F0A6</span>', '<span class= "spade">&#x1F0A7</span>', '<span class= "spade">&#x1F0A8</span>', '<span class= "spade">&#x1F0A9</span>', '<span class= "spade">&#x1F0AA</span>', '<span class= "spade">&#x1F0AB</span>', '<span class= "spade">&#x1F0AD</span>', '<span class= "spade">&#x1F0AE</span>', '<span class= "heart">&#x1F0B1</span>', '<span class= "heart">&#x1F0B2</span>', '<span class= "heart">&#x1F0B3</span>', '<span class= "heart">&#x1F0B4</span>', '<span class= "heart">&#x1F0B5</span>', '<span class= "heart">&#x1F0B6</span>', '<span class= "heart">&#x1F0B7</span>', '<span class= "heart">&#x1F0B8</span>', '<span class= "heart">&#x1F0B9</span>', '<span class= "heart">&#x1F0BA</span>', '<span class= "heart">&#x1F0BB</span>', '<span class= "heart">&#x1F0BD</span>', '<span class= "heart">&#x1F0BE</span>', '<span class= "diamond">&#x1F0C1</span>', '<span class= "diamond">&#x1F0C2</span>', '<span class= "diamond">&#x1F0C3</span>', '<span class= "diamond">&#x1F0C4</span>', '<span class= "diamond">&#x1F0C5</span>', '<span class= "diamond">&#x1F0C6</span>', '<span class= "diamond">&#x1F0C7</span>', '<span class= "diamond">&#x1F0C8</span>', '<span class= "diamond">&#x1F0C9</span>', '<span class= "diamond">&#x1F0CA</span>', '<span class= "diamond">&#x1F0CB</span>', '<span class= "diamond">&#x1F0CD</span>', '<span class= "diamond">&#x1F0CE</span>', '<span class= "club">&#x1F0D1</span>', '<span class= "club">&#x1F0D2</span>', '<span class= "club">&#x1F0D3</span>', '<span class= "club">&#x1F0D4</span>', '<span class= "club">&#x1F0D5</span>', '<span class= "club">&#x1F0D6</span>', '<span class= "club">&#x1F0D7</span>', '<span class= "club">&#x1F0D8</span>', '<span class= "club">&#x1F0D9</span>', '<span class= "club">&#x1F0DA</span>', '<span class= "club">&#x1F0DB</span>', '<span class= "club">&#x1F0DD</span>', '<span class= "club">&#x1F0DE</span>'];
-        document.getElementById("deck").innerHTML = array;
-        function shuffle() {
-            document.getElementById("myCard").innerHTML = '';
-            document.getElementById("total").innerHTML = '';
-            let shuffled = [];
-            ace = 0;
-            total = 0;
-
-            for (i = 0; i < 1000; i++) {
-                let start = Math.floor((Math.random() * 5));
-                let shuffling = Math.floor((Math.random() * 30));
-                shuffled = array.splice(start, shuffling);
-                array = array.concat(shuffled);
-            }
-
-            clone = array.slice(0);
-            document.getElementById("deck").innerHTML = array;
-        };
-
-        let clone = array.slice(0);
-        let value = 0;
-        let total = 0;
-        let ace = 0;
-        function draw() {
-            
-            myCard = clone.pop();
-            value = parseInt('0x' + myCard.charAt(myCard.length - 8));
-            ace = (value === 1) ? ace+=10 : ace+=0; 
-            value = (value > 10) ? 10 : value;
-            console.log(value);
-            console.log(ace);
-            ace = (total + value + ace > 21) ? 0 : ace;
-            total = total + value + ace;
-            document.getElementById("myCard").innerHTML = myCard;
-            document.getElementById("deck").innerHTML = clone;
-            document.getElementById("total").innerHTML = total;
-            document.getElementById("total2").innerHTML = (total>21) ? 'BUST' : total;
-
-        };
-    </script>
+    <script src="main.js"></script>
 </body>
 
 
