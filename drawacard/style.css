@@ -56,7 +56,6 @@ button:hover {
 
 #cards {
     display: flex;
-    width: 100vw;
     justify-content: space-around;    
 }
 form{
