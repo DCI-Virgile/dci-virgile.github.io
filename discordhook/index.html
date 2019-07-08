@@ -9,11 +9,12 @@
 </head>
 
 <body>
-    <form id="go">
-        Paste your Discord Webhook:<br><input type="text" name="webhook" id="webhook"><br>
-        Type your message:<br><input type="text" name="message" id="message"><br>
+    <form onsubmit="send(event)">
+        Paste your Discord Webhook:<br><input type="text" id="webhook"><br>
+        Type your message:<br><input type="text" id="message"><br>
         <button type="submit">Go</button>
     </form>
+        
     <p id="sent"></p>
 </body>
 <script src="assets/main.js"></script>
