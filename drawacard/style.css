@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
 }
+body{
+    display: flex;
+    flex-direction: column;
+}
+body > *{
+    flex-grow: 1;
+}
 .spade {
     color: rgb(47, 56, 79);
 }
@@ -17,8 +24,10 @@
 .diamond {
     color: red;
 }
-p{
-    padding: 5px;
+#deck, #drawn {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3vh;
 }
 #name, #total{
     text-align: center;
@@ -26,18 +35,18 @@ p{
     font-family: sans-serif;
 }
 #myCard {
-    font-size: 50vh;
+    font-size: 40vh;
 }
 
 #cardBack {
-    font-size: 50vh;
+    font-size: 40vh;
 }
 
 button {
     margin: 0;
     padding: 0;
     color: black;
-    border: 5px solid white;
+    border: none;
     background-color:white;
 }
 
@@ -47,8 +56,21 @@ button:hover {
 
 #cards {
     display: flex;
-    height: 70vh;
     width: 100vw;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
+}
+form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    align-items: center;
+}
+form > button{
+    border: 1px solid black;
+    padding: 2px;
+}
+form > button:hover{
+    background-color: black;
+    color: white;
 }

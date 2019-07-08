@@ -11,17 +11,22 @@
 
 <body onload="shuffle()">
     <p id="deck"></p>
+    <form onsubmit="send(event)">
+        Paste your Discord Webhook:<br><input type="text" id="webhook"><br>
+        Enter a Username:<br><input type="text" id="username"><br>
+        <button type="submit">Share your result on Discord</button>
+    </form>
     <div id="cards">
         <button id="cardBack" onclick="draw()">&#x1F0A0</button>
         <button onclick="shuffle()" id="myCard">&#x1F0DF</button>
     </div>
     <p id="name"></p>
     <p id="total"></p>
-    
     <p id="drawn"></p>
+
+    
 
     <script src="main.js"></script>
 </body>
-
 
 </html>
